@@ -1,0 +1,109 @@
+html, body
+{
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+
+    background-color: #000; //#00325b;
+    overflow: hidden;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+a
+button,
+input,
+textarea,
+a:focus,
+button:focus,
+input:focus,
+textarea:focus
+a:active,
+button:active
+{
+    outline: none;
+    outline-style: none;
+    -moz-outline-style: none;
+}
+
+.hidden,
+.d-none
+{
+    display: none !important;
+    // opacity: 0 !important;
+    // visibility: hidden !important;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-self: center;
+
+    width: 100%;
+    height: auto; //100%;
+
+    min-width: 100vw;
+    // min-height: 100vh;
+
+    background-color: #000;
+
+    padding-top: 56.25%;
+    overflow: hidden;
+
+    .wj-scene
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.loading
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00325b;
+    color: #ffb300;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 10;
+
+    pointer-events: none;
+
+    & > span
+    {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+}
